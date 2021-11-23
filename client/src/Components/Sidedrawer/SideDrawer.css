@@ -1,0 +1,47 @@
+.side-drawer-true {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 70%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  animation-name: drawer-to-right;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawer-to-right {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.side-drawer-close {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  height: 100vh;
+  width: 70%;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  animation-name: drawer-to-left;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes drawer-to-left {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
